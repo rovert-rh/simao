@@ -2775,7 +2775,7 @@ img.u-pull-left {
     transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: #02025c;
+    background: #0A0C35;
     z-index: -1;
     transition: width 150ms ease-in-out;
 }
@@ -4108,7 +4108,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    background-color: var(--color-gray-14);
+    background-color: #2E2EE6;
     padding-top: var(--vspace-5);
     padding-bottom: var(--vspace-3);
 }
