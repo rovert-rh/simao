@@ -2756,9 +2756,9 @@ img.u-pull-left {
 }
 
 .fifth {
-    border-color: #8e44ad;
+    border-color: #ffffff;
     border-radius: 0;
-    color: #8e44ad;
+    color: #ffffff;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -2775,7 +2775,7 @@ img.u-pull-left {
     transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: #8e44ad;
+    background: #02025c;
     z-index: -1;
     transition: width 150ms ease-in-out;
 }
