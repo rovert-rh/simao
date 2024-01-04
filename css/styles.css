@@ -519,7 +519,7 @@ body {
     background-repeat: no-repeat;
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -1289,7 +1289,7 @@ body {
     font-size: var(--base-font-size);
     font-weight: 400;
     line-height: var(--vspace-1);
-    color: var(--color-text);
+    color: rgb(255, 255, 255);
 }
 
 /* links
@@ -3561,55 +3561,15 @@ img.u-pull-left {
     margin-top: 200px;
 }
 
-.home .box-container {
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 4rem;
-}
-
-.home .image {
-    text-align: center;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 40rem;
-    flex: 1 1 40rem;
-
-}
-
-.home .image img {
-    height: 50rem;
-    width: 40rem;
-    object-fit: cover;
-    margin: 10%;
-}
-
 .home .content {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 40rem;
-    flex: 1 1 40rem;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    flex-direction: column;
     align-items: center;
-
     margin-top: 7rem;
+}
+
+.home .content .text {
+    text-align: center;
 }
 
 .home .content h2 {
@@ -3620,14 +3580,13 @@ img.u-pull-left {
 
 .home .content h1 {
     color: #fff;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     text-transform: none;
-    margin-top: 2% !important
+    margin-top: 2% !important;
 }
 
 .home .content h1 span {
     color: #fff;
-
 }
 
 .home .content p {
@@ -3640,6 +3599,9 @@ img.u-pull-left {
     word-wrap: break-word;
 }
 
+.home .content .video-container {
+    margin-top: 2rem;
+}
 /*--------------------- 4- Home Area CSS (End) ---------------------*/
 
 
@@ -3649,7 +3611,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    background-color: var(--color-1-dark);
+    background-color: #FF761B;
     padding-top: var(--vspace-5);
     padding-bottom: var(--vspace-5);
 }
@@ -3789,7 +3751,6 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-works {
     background-color: #0A0C35;
-    padding-top: var(--vspace-5);
     padding-bottom: var(--vspace-4);
 }
 
@@ -3890,7 +3851,7 @@ img.u-pull-left {
     font-size: calc(var(--text-size) * 0.6667);
     line-height: 1.5;
     margin-bottom: 0.2rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
 }
 
 .folio-item__project-link {
@@ -3901,7 +3862,7 @@ img.u-pull-left {
     line-height: 2rem;
     color: white;
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #ffffff;
     padding: .6rem 1.2rem;
     opacity: 0;
     visibility: hidden;
@@ -3964,7 +3925,8 @@ img.u-pull-left {
  * ## clients
  * ------------------------------------------------------------------- */
 .clients-outer {
-    max-width: 1020px;
+        display: flex;
+        justify-content: center;
 }
 
 .clients-outer .text-clients-title {
@@ -4107,7 +4069,7 @@ img.u-pull-left {
 .testimonial-slider__avatar {
     width: var(--vspace-1_75);
     height: var(--vspace-1_75);
-    border-radius: 100%;
+    border-radius: 30%;
     outline: none;
     position: absolute;
     top: 0;
@@ -4199,7 +4161,6 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #2E2EE6;
-    padding-top: var(--vspace-5);
     padding-bottom: var(--vspace-3);
 }
 

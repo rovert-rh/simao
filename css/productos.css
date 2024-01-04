@@ -6,7 +6,7 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowwrap;
+    flex-wrap:wrap;
     max-width: 1000px;
   }
   
@@ -180,7 +180,31 @@
     top: 12px;
   }
   .beneficios{
-    background-color: var(--color-1-dark);
+    background-color: #FF761B;
     padding-top: var(--vspace-5);
     padding-bottom: var(--vspace-5);
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .text-pretitle,
+  .text-display-title,
+  img,
+  .span10 {
+    flex: 1;
+  }
+  
+  .text-pretitle,
+  .text-display-title {
+    flex-basis: 40%; /* Ajusta el porcentaje según tus necesidades */
+    margin-right: 20px; /* Ajusta el margen según tus necesidades */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
   }
