@@ -3553,6 +3553,94 @@ img.u-pull-left {
     }
 }
 
+/*--------------------- 4- Home Area CSS (Start) ---------------------*/
+.home {
+    padding: 0rem 5%;
+    background-color: var(--black);
+    min-height: 100vh;
+}
+
+.home .box-container {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.home .image {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+
+}
+
+.home .image img {
+    height: 50rem;
+    width: 40rem;
+    object-fit: cover;
+    margin: 10%;
+}
+
+.home .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    margin-top: 7rem;
+}
+
+.home .content h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.home .content h1 {
+    color: #fff;
+    padding: .5rem 0;
+    text-transform: none;
+    margin-top: 2% !important
+}
+
+.home .content h1 span {
+    color: #fff;
+
+}
+
+.home .content p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    word-wrap: break-word;
+}
+
+/*--------------------- 4- Home Area CSS (End) ---------------------*/
+
 
 /* ===================================================================
  * # SERVICES

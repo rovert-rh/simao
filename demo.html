@@ -1,52 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" >
+<html lang="en" class="no-js">
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
+    <!--- basic page needs ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tyndale</title>
-
+    <title>SIMAO</title>
     <script>
         document.documentElement.classList.remove('no-js');
         document.documentElement.classList.add('js');
     </script>
 
-    <!-- CSS
-    ================================================== -->
+    <!-- CSS ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- favicons
-    ================================================== -->
+    <!-- favicons ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
 </head>
 
 <body id="top">
-
-
-    <!-- preloader
-    ================================================== -->
+    <!-- preloader ================================================== -->
     <div id="preloader">
-        <div id="loader">
-        </div>
+        <div id="loader"></div>
     </div>
 
-
-    <!-- page wrap
-    ================================================== -->
+    <!-- page wrap ================================================== -->
     <div class="s-pagewrap">
-
-
-
-        <!-- # site header 
-        ================================================== -->
+        <!-- # site header ================================================== -->
         <header class="s-header">
 
             <div class="s-header__block">
@@ -63,7 +47,7 @@
                 <nav class="s-header__nav">
                     <ul>
                         <li><a href="index.html" class="smoothscroll">Inicio</a></li>
-                        <li><a href="productos.html" class="smoothscroll">Productos</a></li>
+                        <li class="current"><a href="/productos.html" class="smoothscroll">Productos</a></li>
                         <li><a href="sector.html" class="smoothscroll">Sectores</a></li>
                     </ul>
                 </nav>
@@ -75,202 +59,73 @@
                 </ul>
             </div> <!-- end s-header__nav-wrap -->
 
-        </header> <!-- end s-header -->
+        </header>
 
-
-        <!-- # intro 
-        ================================================== -->
+        <!-- # intro ================================================== -->
         <section>
-        <form action="/submit" method="post">
-            <h1>Realice una prueba en la plataforma y aplicación SIMAO</h1>
-            <p>✔ No es necesario registrar una tarjeta de crédito</p>
-            <p>✔ Acceso completo al sistema</p>
-            <div class="form-group">
-              <label for="nombre_completo">Nombre completo</label>
-              <input type="text" class="form-control" id="nombre_completo" name="nombre_completo" required>
-            </div>
-            <div class="form-group">
-              <label for="nombre_empresa">Nombre de la empresa</label>
-              <input type="text" class="form-control" id="nombre_empresa" name="nombre_empresa" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Correo electrónico</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="telefono">Número de teléfono (WhatsApp)</label>
-              <input type="tel" class="form-control" id="telefono" name="telefono" required>
-            </div>
-            <div class="form-group">
-              <label for="pais">País</label>
-              <select class="form-control" id="pais" name="pais">
-                <option value="Ecuador">Ecuador</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="tamaño_equipo">¿Cuál es el tamaño de su equipo externo?</label>
-              <select class="form-control" id="tamaño_equipo" name="tamaño_equipo">
-                <option value="1-10">1-10</option>
-                <option value="11-50">11-50</option>
-                <option value="51-100">51-100</option>
-                <option value="101-200">101-200</option>
-                <option value="201-500">201-500</option>
-                <option value="501-1000">501-1000</option>
-                <option value="1001-5000">1001-5000</option>
-                <option value="5001 o más">5001 o más</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="segmento_empresa">¿Cuál es el segmento de su empresa?</label>
-              <select class="form-control" id="segmento_empresa" name="segmento_empresa">
-                <option value="Construcción">Construcción</option>
-                <option value="Manufactura">Manufactura</option>
-                <option value="Distribución">Distribución</option>
-                <option value="Comercio al por menor">Comercio al por menor</option>
-                <option value="Servicios">Servicios</option>
-                <option value="Otro">Otro</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <input type="checkbox" id="acepto_comunicaciones" name="acepto_comunicaciones" required>
-              <label for="acepto_comunicaciones">Acepto recibir más comunicaciones de Auvo y entiendo que puedo darme de baja en cualquier momento</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
+            <form action="/submit" method="post" class="contact-form">
+                <h1>Realice una prueba en la plataforma y aplicación SIMAO</h1>
+                <p>✔ No es necesario registrar una tarjeta de crédito</p>
+                <p>✔ Acceso completo al sistema</p>
+
+                <div class="form-group">
+                    <label for="nombre_completo">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre_completo" name="nombre_completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre_empresa">Nombre de la empresa</label>
+                    <input type="text" class="form-control" id="nombre_empresa" name="nombre_empresa" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número de teléfono (WhatsApp)</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País</label>
+                    <select class="form-control" id="pais" name="pais">
+                        <option value="Ecuador">Ecuador</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tamaño_equipo">¿Cuál es el tamaño de su equipo externo?</label>
+                    <select class="form-control" id="tamaño_equipo" name="tamaño_equipo">
+                        <!-- ... (Opciones del tamaño del equipo) ... -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="segmento_empresa">¿Cuál es el segmento de su empresa?</label>
+                    <select class="form-control" id="segmento_empresa" name="segmento_empresa">
+                        <!-- ... (Opciones del segmento de empresa) ... -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="acepto_comunicaciones" name="acepto_comunicaciones" required>
+                    <label for="acepto_comunicaciones">Acepto recibir más comunicaciones de Auvo y entiendo que puedo darme de baja en cualquier momento</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </section>
-          
 
-
-       
-        <!-- ## contact
-        ================================================== -->
-        <section id="contact" class="s-contact target-section">
-
-            <div class="row section-header section-header--dark"">
-                <div class="column lg-12">
-                    <h3 class="text-pretitle">Get In Touch</h3>
-                    <h1 class="text-display-title">
-                        Do you have an idea or an epic project in mind? Let’s work together.
-                    </h1>
-                </div>
-            </div>
-
-            <div class="row row-x-center text-center s-contact__content">
-                <div class="column lg-12">
-                    <p class="lead">
-                    Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
-                    quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Quasi sed at voluptas corrupti eius distinctio.
-                    </p>
-                    <div class="btn-wrap">
-                        <a href="#0" class="btn btn--primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,4H4C2.897,4,2,4.897,2,6v12c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M20,6v0.511 l-8,6.223L4,6.512V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044L20.002,18H4z"></path></svg>
-                            Write An Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <footer class="s-footer">
-
-                <div class="row s-footer__top">
-                    <div class="column lg-5 md-8 stack-on-700 s-footer__block contact-address">
-                        <h4 class="h6">Where to Find Us</h4>
-        
-                        <p>
-                        1600 Amphitheatre Parkway <br>
-                        Mountain View, California <br>
-                        94043  US
-                        </p>
-                    </div>
-
-                    <div class="column lg-3 md-4 stack-on-700 s-footer__block contact-social">
-                        <h4 class="h6">Follow Us</h4>
-        
-                        <ul class="contact-list">
-                            <li><a href="#0">Facebook</a></li>
-                            <li><a href="#0">Twitter</a></li>
-                            <li><a href="#0">Instagram</a></li>
-                        </ul>
-                    </div>
-        
-                    <div class="column lg-3 md-12 s-footer__block contact-number">
-                        <h4 class="h6">Contact Us</h4>
-        
-                        <ul class="contact-list">
-                            <li><a href="mailto:#0">info@tyndale.com</a></li>
-                            <li><a href="tel:197-543-2345">+197 543 2345</a></li>
-                            <li><a href="tel:197-123-9876">+197 123 9876</a></li>
-                        </ul>
-                    </div>
-                </div> <!-- end s-footer__top -->
-
-                <div class="row s-footer__bottom">
-                    <div class="column ss-copyright">
-                        <span>© Copyright Tyndale 2021</span> 
-                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                    </div>
-
-                    <div class="ss-go-top">
-                        <a class="smoothscroll" title="Back to Top" href="#top">
-                            <span class="ss-go-top__icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(90deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"><path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path></svg>
-                            </span>
-                            <span class="ss-go-top__text">Back to Top</span>
-                        </a>
-                    </div>
-                </div> <!-- end s-footer__top -->
-
-            </footer>
-
-        </section> <!-- end s-contact -->
+        <!-- ... (Contenido actual de la página) ... -->
 
     </div> <!-- end -s-pagewrap -->
 
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div> <!-- end photoSwipe background -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+     <!-- Java Script
+     ================================================== -->
+     <script src="js/plugins.js"></script>
+     <script src="js/main.js"></script>
 
 </body>
 </html>
