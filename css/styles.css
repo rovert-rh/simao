@@ -516,6 +516,7 @@ body {
 
 body {
     background-image: url('/images/simaoimages/fondo.png');
+    background-repeat: no-repeat;
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -3557,7 +3558,7 @@ img.u-pull-left {
 .home {
     padding: 0rem 5%;
     background-color: var(--black);
-    min-height: 100vh;
+    margin-top: 200px;
 }
 
 .home .box-container {
@@ -3787,6 +3788,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-works {
+    background-color: #0A0C35;
     padding-top: var(--vspace-5);
     padding-bottom: var(--vspace-4);
 }

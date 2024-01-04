@@ -161,7 +161,7 @@ pre[class*="language-"] {
 .swiper-container {
     margin-left  : auto;
     margin-right : auto;
-    position     : relative;
+    position     : center;
     overflow     : hidden;
     list-style   : none;
     padding      : 0;
