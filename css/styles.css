@@ -2737,7 +2737,6 @@ img.u-pull-left {
 }
 
 .section-header.has-bottom-sep {
-    padding-bottom: calc(var(--vspace-1_25) - 1px);
     position: relative;
 }
 

@@ -203,8 +203,7 @@
 
 .beneficios {
   background-color: #FF761B;
-  padding-top: var(--vspace-5);
-  padding-bottom: var(--vspace-5);
+  padding-top: var(--vspace-1);
 }
 
 .row {
@@ -259,4 +258,53 @@ img {
 
 .text-display-title {
   margin-bottom: 20px;
+}
+
+body {
+  text-align: center;
+}
+
+.btncentro,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  --btn-height: var(--vspace-btn);
+  display: inline-block;
+  font-family: var(--font-1);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: .35em;
+  height: var(--btn-height);
+  line-height: calc(var(--btn-height) - 2px);
+  padding: 0 3.6rem;
+  margin: 0 auto var(--vspace-0_5) auto; /* Margen superior e inferior 0, centrando horizontalmente */
+  color: var(--color-btn-text);
+  text-decoration: none;
+  text-align: center;
+  white-space: center;
+  cursor: pointer;
+  transition: all .3s;
+  border-radius: var(--border-radius);
+  background-color: var(--color-btn);
+  border: 1px solid var(--color-btn);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btncentro:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: var(--color-btn-hover);
+  border-color: var(--color-btn-hover);
+  color: var(--color-btn-hover-text);
+  outline: 0;
 }
