@@ -50,3 +50,34 @@
     padding-right: 0;
   }
 }
+
+
+.hero {
+  position: relative;
+  height: 85vh;
+  background: url('/images/simaoimages/hero.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}

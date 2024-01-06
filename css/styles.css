@@ -522,6 +522,7 @@ body {
     -webkit-tap-highlight-color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #FF761B;
 }
 
 p {
@@ -3275,6 +3276,16 @@ img.u-pull-left {
     position: relative;
 }
 
+.s-intro__text1 {
+    font-family: var(--font-2);
+    font-weight: 200;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: calc(1 * var(--space));
+    position: relative;
+}
+
 .s-intro__text span {
     color: var(--color-1);
 }
@@ -3954,11 +3965,6 @@ img.u-pull-left {
 .clients__slide:hover img {
     transform: scale(1);
     opacity: 1;
-}
-
-.img-1 {
-    width: 378px;
-    height: 186px;
 }
 
 /* ------------------------------------------------------------------- 
