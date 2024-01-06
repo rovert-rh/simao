@@ -3755,6 +3755,11 @@ img.u-pull-left {
     padding-bottom: var(--vspace-4);
 }
 
+.s-works1 {
+    background-color: #2E2EE6;
+    padding-bottom: var(--vspace-4);
+}
+
 /* ------------------------------------------------------------------- 
  * ## portfolio list
  * ------------------------------------------------------------------- */
@@ -4159,7 +4164,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-    background-color: #2E2EE6;
+    background-color: #0A0C35;
     padding-bottom: var(--vspace-3);
 }
 
@@ -4195,6 +4200,7 @@ img.u-pull-left {
  *
  *
  * ------------------------------------------------------------------- */
+
 .s-footer h4 {
     margin-top: 0;
     margin-bottom: var(--vspace-1);

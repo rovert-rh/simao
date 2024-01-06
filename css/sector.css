@@ -50,6 +50,11 @@
   }
 }
 
+footer {
+  padding: 4%;
+  background-color: #2E2EE6;
+
+}
 
 .hero {
   position: relative;
