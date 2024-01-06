@@ -1,14 +1,14 @@
-body {
+.animacion1 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   background-color: #0A0C35;
 }
 
-div {
+.animacion1 {
   display: inline-block;
 }
 
-.bigger {
+.bigger1 {
   margin: 0;
   font-size: 40px;
   font-weight: 800;
@@ -19,7 +19,7 @@ div {
   position: relative;
 }
 
-.text {
+.text1 {
   max-width: 900px;
   width: 100%;
   line-height: 24px;
@@ -27,10 +27,10 @@ div {
   color: white;
   padding: 20px;
 }
-.text.txt-center {
+.text1 .txt-center {
   text-align: center;
 }
-.text a {
+.text1 a {
   color: white;
 }
 
