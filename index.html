@@ -18,6 +18,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swipper.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- favicons
     ================================================== -->
@@ -79,25 +80,96 @@
 
         <!-- # intro 
         ================================================== -->
-        <section id="intro" class=" ">
-            <div class="home" id="home">
-                <div class="content">
-                    <div class="text">
-                        <h2>La gestión de tus tareas y mantenimientos</h2>
-                        <h1><span class="typing-text"></span></h1>
+        <section id="intro" class="">
+            <div class="swiper-container home-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide hero">
+                        <div class="video-background">
+                            <video autoplay muted loop width="100%">
+                                <source src="images/simaoimages/1.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                <h2>Video 1: Descripción del contenido</h2>
+                            </div>
+                            <a href="demo.html" class="btn_hero">Agenda tu demo</a>
+                        </div>
                     </div>
-                    <div>
-                        <video width="720" height="360" controls>
-                            <source src="./images/simaoimages/videosimao.mp4" type="video/mp4">
-                            Tu navegador no soporta el elemento de video.
-                        </video>
-                    
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide hero">
+                        <div class="video-background">
+                            <video autoplay muted loop width="100%">
+                                <source src="images/simaoimages/2.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                <h2>Video 1: Descripción del contenido</h2>
+                            </div>
+                            <a href="demo.html" class="btn_hero">Agenda tu demo</a>
+                        </div>
                     </div>
-                    <a href="demo.html" class="btn">Agenda tu demo</a>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide hero">
+                        <div class="video-background">
+                            <video autoplay muted loop width="100%">
+                                <source src="images/simaoimages/3.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                <h2>Video 1: Descripción del contenido</h2>
+                            </div>
+                            <a href="demo.html" class="btn_hero">Agenda tu demo</a>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide hero">
+                        <div class="video-background">
+                            <video autoplay muted loop width="100%">
+                                <source src="images/simaoimages/4.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                <h2>Video 1: Descripción del contenido</h2>
+                            </div>
+                            <a href="demo.html" class="btn_hero">Agenda tu demo</a>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide hero">
+                        <div class="video-background">
+                            <video autoplay muted loop width="100%">
+                                <source src="images/simaoimages/5.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                <h2>Video 1: Descripción del contenido</h2>
+                            </div>
+                            <a href="demo.html" class="btn_hero">Agenda tu demo</a>
+                        </div>
+                    </div>
+            
+    
+            
                 </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="row clients-outer" data-animate-block>
-                <div class="column lg-12">
+        </section>
+        <section>
+            <div class="row1 clients-outer" data-animate-block>
+                <div class="column lg-12 marcas">
                     <div class="swiper-container clients" data-animate-el>
                         <div class="swiper-wrapper clients__content">
                             <a href="#0" title="" class="swiper-slide clients__slide"><img
@@ -105,7 +177,8 @@
                             <a href="#0" title="" class="swiper-slide clients__slide"><img
                                     src="images/simaoimages/abo.png" /></a>
                         </div>
-                </div> <!-- end column -->
+                    </div> <!-- end column -->
+                </div>
             </div>
         </section>
         <section>
@@ -135,7 +208,7 @@
                         <div class="swiper-wrapper">
                             <div class="testimonial-slider__slide swiper-slide">
                                 <div class="testimonial-slider__author">
-                                    <img class="img-1" src="images/simaoimages/foto1empresa.png" alt="">
+                                    <img class="img-1" src="images/simaoimages/celphoneapp.png" alt="">
                                  <h2>Para tus empresas</h2>
                                 </div>
                                 <p>
@@ -146,7 +219,7 @@
 
                             <div class="testimonial-slider__slide swiper-slide">
                                 <div class="testimonial-slider__author">
-                                    <img class="img-1" src="images/simaoimages/foto2usuario.png" alt="">
+                                    <img class="img-1" src="images/simaoimages/usuarioapp.png" alt="">
                                  <h2>Para tus clientes</h2>
                                 </div>
                                 <p>
@@ -206,13 +279,6 @@
                 <span>Design by <a href="https://www.dvux.lat/">DVUX</a></span>
             </div>
 
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">
-                    <span class="ss-go-top__icon">
-                    </span>
-                    <span class="ss-go-top__text">Subir</span>
-                </a>
-            </div>
         </div> <!-- end s-footer__top -->
 
     </footer>
@@ -269,6 +335,7 @@
     <!-- Java Script
     ================================================== -->
     <script src="js/plugins.js"></script>
+    <script src="js/swipper.js"></script>
     <script src="js/main.js"></script>
     <script>
         var typed = new Typed('.typing-text', {
