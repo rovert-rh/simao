@@ -4200,7 +4200,10 @@ img.u-pull-left {
  *
  *
  * ------------------------------------------------------------------- */
-
+.s-footer {
+    padding: 4%;
+  background-color: #2E2EE6;
+}
 .s-footer h4 {
     margin-top: 0;
     margin-bottom: var(--vspace-1);
