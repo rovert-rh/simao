@@ -514,17 +514,6 @@ body {
     height: 100%;
 }
 
-body {
-    background-image: url('/images/simaoimages/fondo.png');
-    background-repeat: no-repeat;
-    -webkit-overflow-scrolling: touch;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: #ffffff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #FF761B;
-}
-
 p {
     font-size: inherit;
     text-rendering: optimizeLegibility;
@@ -4206,10 +4195,6 @@ img.u-pull-left {
  *
  *
  * ------------------------------------------------------------------- */
-.s-footer {
-    margin-top: var(--vspace-5);
-}
-
 .s-footer h4 {
     margin-top: 0;
     margin-bottom: var(--vspace-1);
