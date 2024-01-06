@@ -50,11 +50,26 @@
   }
 }
 
-footer {
-  padding: 4%;
-  background-color: #2E2EE6;
-
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Añadido para centrar el texto horizontalmente */
+  min-height: 70vh;
+  /* Ajusta esto según tus necesidades para centrar verticalmente */
 }
+
+.content-wrapper {
+  max-width: 1200px;
+  /* Ajusta el ancho máximo según tus necesidades */
+  width: 60%;
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
+}
+
+
+
 
 .hero {
   position: relative;

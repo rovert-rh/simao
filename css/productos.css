@@ -5,6 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
+
 }
 
 .p {
@@ -30,6 +31,7 @@
   perspective: 1500px;
   position: relative;
   flex-grow: 1;
+  margin: 0 .5rem;
 }
 
 @media screen and (max-width: 800px) {
