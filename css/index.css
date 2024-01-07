@@ -167,3 +167,14 @@ div {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .bigger {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .text {
+    padding: 10px;
+  }
+}
