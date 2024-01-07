@@ -108,19 +108,19 @@ div {
 }
 
 .has-animation.animation-ltr.animate-in:before {
-  animation: revealLTR 1.8s ease;
+  animation: revealLTR 3s ease;
 }
 
 .has-animation.animation-ltr.animate-in:after {
-  animation: revealLTR 1s 0.6s ease;
+  animation: revealLTR 3s 0.6s ease;
 }
 
 .has-animation.animation-rtl.animate-in:before {
-  animation: revealRTL 1.8s ease;
+  animation: revealRTL 3s ease;
 }
 
 .has-animation.animation-rtl.animate-in:after {
-  animation: revealRTL 1s 0.6s ease;
+  animation: revealRTL 3s 0.6s ease;
 }
 
 @keyframes revealRTL {
