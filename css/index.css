@@ -1,5 +1,5 @@
 .banner {
-  background-color: #000000;
+  background-color: #2E2EE6;
   margin: 0;
 }
 
@@ -16,6 +16,7 @@ div {
   color: white;
   display: inline-block;
   position: relative;
+  line-height: 1.2;
 }
 
 .text {
@@ -103,7 +104,7 @@ div {
 }
 
 .has-animation.animate-in:after {
-  background-color: #FF761B;
+  background-color: #de6718;
   animation-delay: 0.5s;
 }
 

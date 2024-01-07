@@ -103,7 +103,7 @@
 }
 
 .back .button {
-  background: linear-gradient(135deg, #FF761B, #FF761B);
+  background: linear-gradient(135deg, #de6718, #de6718);
 }
 
 .back .button:before {
@@ -120,7 +120,7 @@
 }
 
 .card:nth-child(even) .back .button {
-  background: linear-gradient(135deg, #FF761B, #FF761B);
+  background: linear-gradient(135deg, #de6718, #de6718);
 }
 
 .card:nth-child(even) .back .button:before {
@@ -178,7 +178,7 @@
 }
 
 .beneficios {
-  background-color: #FF761B;
+  background-color: #de6718;
   padding-top: var(--vspace-1);
 }
 
