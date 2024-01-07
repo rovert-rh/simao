@@ -1,10 +1,7 @@
 .banner {
-  background-color: #2E2EE6;
+  text-align: center;
+  background-color: black;
   margin: 0;
-}
-
-div {
-  display: inline-block;
 }
 
 .bigger {
@@ -34,17 +31,6 @@ div {
   a {
     color: white;
   }
-}
-
-
-body {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  background-color: #0A0C35;
-}
-
-div {
-  display: inline-block;
 }
 
 .bigger {
