@@ -39,12 +39,27 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+  .hero {
+    height: 100vh;
+    position: relative;
   }
 
-  .text-content,
-  .image-content {
+  .hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/simaoimages/imagensector.png') center/cover;
+    z-index: 1;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .text-content {
     max-width: 100%;
     padding-right: 0;
   }
@@ -98,7 +113,22 @@ p {
   /* Centra el contenedor horizontalmente */
 }
 
-.img1 {
-  padding: 0;
-  margin: 0;
+@media (max-width: 768px) {
+  .container1 {
+    display: flex;
+    flex-direction: column-reverse;
+    /* Invierte el orden en dispositivos móviles */
+  }
+
+  .image-content {
+    order: 1;
+    /* Cambia el orden de la imagen para que esté arriba en dispositivos móviles */
+    margin-bottom: 20px;
+    /* Agrega un margen inferior opcional */
+  }
+
+  .text-content {
+    max-width: 100%;
+    padding-right: 0;
+  }
 }

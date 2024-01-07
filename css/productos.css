@@ -82,8 +82,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
-  opacity: 0.25;
+  background: linear-gradient(15deg, #000000, #000000);
+  opacity: 0.50;
   z-index: -1;
 }
 
@@ -178,14 +178,8 @@
 }
 
 .beneficios {
-  background-color: #2E2EE6;
+  background-color: #0A0C35;
   padding-top: var(--vspace-1);
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .text-pretitle,
@@ -212,6 +206,8 @@ img,
   .flex-container {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -221,8 +217,15 @@ img,
   }
 
 
+  .image-column {
+    display: flex;
+    justify-content: center;
+  }
+
   .image-column img {
-    width: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
 
   }
 
