@@ -169,6 +169,16 @@ pre[class*="language-"] {
     z-index: 1;
 }
 
+.swiper-container1 {
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    list-style: none;
+    padding: 0;
+    /* Fix of Webkit flickering */
+    z-index: 1;
+}
+
 .swiper-container-vertical>.swiper-wrapper {
     flex-direction: column;
 }
