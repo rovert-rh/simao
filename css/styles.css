@@ -1282,7 +1282,7 @@ body {
     line-height: var(--vspace-1);
     color: #fff;
     background-image: url('../images/simaoimages/fondo.png');
-    padding: 0;
+    background-repeat: no-repeat;
 }
 
 /* links
@@ -2781,6 +2781,43 @@ img.u-pull-left {
     width: 110%;
 }
 
+/* ------------------------------------------------------------------- 
+ * ## Fifth Botton
+ * ------------------------------------------------------------------- */
+
+
+.fifth1 {
+    border-color: #ffffff;
+    border-radius: 0;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+}
+
+.fifth1:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #0A0C35;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+}
+
+.fifth1:hover {
+    color: #fff;
+}
+
+.fifth1:hover:after {
+    width: 110%;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## theme-specific typography classes
@@ -4048,7 +4085,7 @@ img.u-pull-left {
  * ## testimonials
  * ------------------------------------------------------------------- */
 .testimonials {
-    margin-top: var(--vspace-3_5);
+    margin-top: var(--vspace-1_25);
     max-width: 900px;
 }
 
