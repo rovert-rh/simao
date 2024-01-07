@@ -53,7 +53,7 @@
 .hero {
   position: relative;
   height: 70vh;
-  background: url('/images/simaoimages/hero.jpg') center/cover;
+  background: url('./images/simaoimages/hero.jpg') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
