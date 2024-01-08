@@ -24,25 +24,36 @@
 .card {
   color: inherit;
   cursor: pointer;
-  width: calc(30% - 10rem);
-  min-width: calc(25% - 2rem);
-  height: 400px;
-  min-height: 400px;
-  perspective: 1500px;
+  width: calc(33.33% - 20px);
+  /* Ancho original para mostrar 3 tarjetas por fila */
+  min-width: calc(33.33% - 20px);
+  height: 300px;
+  /* Ajusta la altura según sea necesario */
+  min-height: 50vh;
+  /* Ajusta la altura mínima según sea necesario */
   position: relative;
-  flex-grow: 1;
-  margin: 0 .5rem;
+  margin: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 800px) {
   .card {
-    width: calc(50% - 2rem);
+    width: calc(50% - 20px);
+    /* Ancho para mostrar 2 tarjetas por fila en pantallas medianas */
+    margin: 10px;
+    /* Nuevo margen para ajustar el espaciado entre tarjetas */
   }
 }
 
 @media screen and (max-width: 500px) {
   .card {
-    width: 100%;
+    width: calc(100% - 20px);
+    /* Ancho para mostrar 1 tarjeta por fila en pantallas pequeñas */
+    margin: 10px;
+    /* Nuevo margen para ajustar el espaciado entre tarjetas */
   }
 }
 
@@ -237,50 +248,127 @@ img,
     text-align: center;
   }
 
-  .btncentro,
-  button,
-  input[type="submit"],
-  input[type="reset"],
-  input[type="button"] {
-    --btn-height: var(--vspace-btn);
-    display: inline-block;
-    font-family: var(--font-1);
-    font-weight: 600;
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: .35em;
-    height: var(--btn-height);
-    line-height: calc(var(--btn-height) - 2px);
-    padding: 0 3.6rem;
-    margin: 0 auto var(--vspace-0_5) auto;
-    /* Margen superior e inferior 0, centrando horizontalmente */
-    color: var(--color-btn-text);
-    text-decoration: none;
-    text-align: center;
-    white-space: center;
-    cursor: pointer;
-    transition: all .3s;
-    border-radius: var(--border-radius);
-    background-color: var(--color-btn);
-    border: 1px solid var(--color-btn);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+}
+
+.s-intro {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #2E2EE6;
+}
+
+/* Estilos de la fila (row2) */
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos de la columna izquierda (column2) */
+.column2 {
+  width: 100%;
+  box-sizing: border-box;
+  flex-basis: calc(50% - 20px);
+  /* Ajusta el ancho de la columna2 */
+  margin-right: 20px;
+  /* Ajusta el espacio entre column2 y column3 */
+}
+
+/* Estilos de la columna derecha (column3) */
+.column3 {
+  width: 90%;
+  box-sizing: border-box;
+  margin-top: 20px;
+
+}
+
+
+/* Estilos del slider */
+.slider-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slider-slide {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slider-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos de los botones de navegación */
+.button-container {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 659px) {
+
+  /* Ajusta el diseño para pantallas más grandes */
+  .row2 {
+    flex-direction: row;
   }
 
-  .btncentro:focus,
-  button:focus,
-  input[type="submit"]:focus,
-  input[type="reset"]:focus,
-  input[type="button"]:focus,
-  .btn:hover,
-  button:hover,
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-
-  input[type="button"]:hover {
-    background-color: var(--color-btn-hover);
-    border-color: var(--color-btn-hover);
-    color: var(--color-btn-hover-text);
-    outline: 0;
+  .column2 {
+    width: calc(45% - 20px);
+    height: 100%;
+    flex-basis: auto;
+    /* Restablece el ancho de la columna2 para ocupar el 100% del ancho */
+    margin-right: 20px;
+    /* Ajusta el espacio entre column2 y column3 */
   }
+
+  .column3 {
+    width: calc(45% - 20px);
+    margin-top: 20px;
+  }
+}
+
+.front {
+  text-align: center;
+  /* Centra el contenido horizontalmente */
+  padding: 20px;
+  /* Ajusta el espaciado interno según sea necesario */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front i {
+  font-size: 3em;
+  /* Ajusta el tamaño del icono según sea necesario */
+  margin-bottom: 10px;
+  /* Ajusta el espacio entre el icono y el texto */
+}
+
+.front p {
+  font-size: 1.5em;
+  /* Ajusta el tamaño del texto según sea necesario */
+  margin: 0;
+  /* Elimina el margen predeterminado del párrafo */
+}
+
+.swiper-slide {
+  width: 300px;
+  /* Ancho deseado de cada tarjeta */
+  margin-right: 20px;
+  /* Espacio entre tarjetas */
+}
+
+.card {
+  /* Estilos personalizados para cada tarjeta */
+  width: 100%;
+  height: 100%;
+  /* Ajusta otros estilos según sea necesario */
 }

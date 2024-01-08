@@ -1,6 +1,6 @@
 .banner {
   text-align: center;
-  background-color: black;
+  background-color: #2E2EE6;
   margin: 0;
 }
 
@@ -45,12 +45,14 @@
 }
 
 .text {
-  max-width: 900px;
+  max-width: 1500px;
   width: 100%;
   line-height: 24px;
   text-align: left;
   color: white;
   padding: 20px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .text.txt-center {
