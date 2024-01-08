@@ -214,12 +214,10 @@ img,
     align-items: center;
   }
 
-
   .text-column {
     flex: 1;
     padding-right: 20px;
   }
-
 
   .image-column {
     display: flex;
@@ -232,7 +230,6 @@ img,
     justify-content: center;
 
   }
-  
 
   .text-display-title {
     margin-bottom: 20px;
@@ -241,7 +238,6 @@ img,
   body {
     text-align: center;
   }
-
 }
 
 .s-intro {
@@ -253,7 +249,6 @@ img,
   background-color: #2E2EE6;
 }
 
-/* Estilos de la fila (row2) */
 .row2 {
   display: flex;
   flex-wrap: wrap;
@@ -261,26 +256,20 @@ img,
   align-items: center;
 }
 
-/* Estilos de la columna izquierda (column2) */
 .column2 {
   width: 100%;
   box-sizing: border-box;
-  flex-basis: calc(50% - 20px);
-  /* Ajusta el ancho de la columna2 */
+  flex-basis: calc(80% - 20px);
   margin-right: 20px;
-  /* Ajusta el espacio entre column2 y column3 */
 }
 
-/* Estilos de la columna derecha (column3) */
 .column3 {
   width: 90%;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 40px;
 
 }
 
-
-/* Estilos del slider */
 .slider-wrapper {
   width: 100%;
   box-sizing: border-box;
@@ -297,7 +286,6 @@ img,
   height: auto;
 }
 
-/* Estilos de los botones de navegación */
 .button-container {
   text-align: center;
 }
@@ -307,9 +295,7 @@ button {
   cursor: pointer;
 }
 
-@media (min-width: 659px) {
-
-  /* Ajusta el diseño para pantallas más grandes */
+@media (min-width: 759px) {
   .row2 {
     flex-direction: row;
   }
@@ -318,9 +304,7 @@ button {
     width: calc(45% - 20px);
     height: 100%;
     flex-basis: auto;
-    /* Restablece el ancho de la columna2 para ocupar el 100% del ancho */
     margin-right: 20px;
-    /* Ajusta el espacio entre column2 y column3 */
   }
 
   .column3 {
@@ -355,4 +339,10 @@ button {
 .card {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .lg-6 {
+    width: 100%;
+  }
 }
