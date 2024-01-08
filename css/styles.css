@@ -3665,6 +3665,16 @@ img.u-pull-left {
     max-width: 1080px;
     margin-top: var(--vspace-2_5);
     color: white;
+    text-align: center;
+}
+
+.service-icon-block {
+    text-align: center; /* Centra el bloque del icono */
+}
+
+.service-icon {
+    display: block; /* Convierte el span en un elemento de bloque */
+    margin: 0 auto; /* Centra el icono dentro del bloque */
 }
 
 .services-list .column:nth-child(2n + 1) {
