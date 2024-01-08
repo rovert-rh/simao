@@ -97,7 +97,7 @@
     /* color-1(#24A89B)
      * color-2(#eddea4)
      */
-    --color-1: hsla(174, 65%, 40%, 1);
+    --color-1: #FF761B;
     --color-2: hsla(48, 67%, 79%, 1);
 
     /* theme color variations
@@ -1338,7 +1338,7 @@ h3,
 .h3,
 h4,
 .h4 {
-    margin-top: var(--vspace-2);
+    margin-top: var(--vspace-1);
     margin-bottom: var(--vspace-0_5);
 }
 
@@ -3702,28 +3702,13 @@ img.u-pull-left {
 }
 
 .service-icon--product-design {
-    background-image: url(../images/icons/services/icon-product-design.svg);
+    background-image: url(../images/simaoimages/public-service.png);
 }
 
 .service-icon--branding {
-    background-image: url(../images/icons/services/icon-branding.svg);
+    background-image: url(../images/simaoimages/seguro.png);
 }
 
-.service-icon--frontend {
-    background-image: url(../images/icons/services/icon-frontend.svg);
-}
-
-.service-icon--research {
-    background-image: url(../images/icons/services/icon-research.svg);
-}
-
-.service-icon--illustration {
-    background-image: url(../images/icons/services/icon-illustration.svg);
-}
-
-.service-icon--ecommerce {
-    background-image: url(../images/icons/services/icon-ecommerce.svg);
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:

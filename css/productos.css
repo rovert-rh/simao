@@ -347,28 +347,20 @@ button {
 
 .front i {
   font-size: 3em;
-  /* Ajusta el tamaño del icono según sea necesario */
   margin-bottom: 10px;
-  /* Ajusta el espacio entre el icono y el texto */
 }
 
 .front p {
   font-size: 1.5em;
-  /* Ajusta el tamaño del texto según sea necesario */
   margin: 0;
-  /* Elimina el margen predeterminado del párrafo */
 }
 
 .swiper-slide {
   width: 300px;
-  /* Ancho deseado de cada tarjeta */
   margin-right: 20px;
-  /* Espacio entre tarjetas */
 }
 
 .card {
-  /* Estilos personalizados para cada tarjeta */
   width: 100%;
   height: 100%;
-  /* Ajusta otros estilos según sea necesario */
 }
