@@ -40,8 +40,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 100vh;
-    position: relative;
+    height: 100%;
   }
 
   .hero:before {
@@ -51,7 +50,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/simaoimages/imagensector.png') center/cover;
+    background: url('../images/simaoimages/imagensector.png') center/cover no-repeat;
+    background-size: cover;
     z-index: 1;
   }
 
@@ -124,11 +124,18 @@ p {
     order: 1;
     /* Cambia el orden de la imagen para que esté arriba en dispositivos móviles */
     margin-bottom: 20px;
-    /* Agrega un margen inferior opcional */
+    height: auto;
   }
 
   .text-content {
     max-width: 100%;
     padding-right: 0;
   }
+}
+
+.img1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 20%;
+  height: 20%;
 }

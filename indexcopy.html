@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
 
 <head>
 
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SIMAO</title>
 
@@ -85,26 +86,23 @@
             <div class="swiper-container home-slider">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide hero" data-slide-number="1">
+                    <div class="swiper-slide hero" id="introSlide">
                         <div class="video-background">
-                            <video autoplay muted loop playsinline class="backgroundVideo">
-                                <source src="images/simaoimages/1.mp4" type="video/mp4">
-                                <source src="images/simaoimages/1mini.mp4" type="video/mp4">
-                                Tu navegador no soporta el elemento de video.
-                              </video>
+                          <video autoplay muted loop playsinline id="backgroundVideo">
+                            <source src="images/simaoimages/1.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                          </video>
                         </div>
                         <div class="content">
                           <a href="demo.html" class="btn fifth intro-btn">Agenda tu demo</a>
                         </div>
                       </div>
                     <!-- Slide 2 -->
-                    <div class="swiper-slide hero" data-slide-number="2">
+                    <div class="swiper-slide hero" id="introSlide1">
                         <div class="video-background">
-                            <video autoplay muted loop playsinline class="backgroundVideo">
+                            <video autoplay muted loop playsinline class="backgroundVideo1">
                                 <!-- Video para pantallas grandes -->
                                 <source src="images/simaoimages/2.mp4" type="video/mp4">
-                                <!-- Video para dispositivos móviles -->
-                                <source src="images/simaoimages/2mini.mp4" type="video/mp4">
                                 Tu navegador no soporta el elemento de video.
                               </video>
                         </div>
@@ -208,7 +206,6 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </section>
-
         <!-- ## Banner
         ================================================== -->
         <section id="banner" class="target-section banner mp-top1">
@@ -359,14 +356,16 @@
 
     <!-- Typed JS -->
     <script src="./vendors/typed/typed.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
     <!-- Java Script
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/swipper.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/prueba.js"></script>
     <script>
         $(document).ready(function () {
           // Función para verificar si la sección está completamente visible en el viewport
@@ -398,9 +397,7 @@
             addAnimationClassIfFullyVisible();
           });
         });
-      </script>
-
-
+    </script>
 </body>
 
 </html>
