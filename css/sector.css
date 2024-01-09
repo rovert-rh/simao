@@ -95,7 +95,7 @@
   }
 
   .hero {
-    min-height: 28vh;
+    min-height: 47vh;
   }
 
   .responsive-image {
@@ -108,6 +108,6 @@
 
 @media (max-width: 468px) {
   .hero {
-    min-height: 25vh;
+    min-height: 40vh;
   }
 }
