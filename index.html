@@ -104,10 +104,7 @@
                     <div class="swiper-slide hero" data-slide-number="2">
                         <div class="video-background">
                             <video autoplay muted loop playsinline class="backgroundVideo">
-                                <!-- Video para pantallas grandes -->
                                 <source src="images/simaoimages/2.mp4" type="video/mp4">
-                                <!-- Video para dispositivos móviles -->
-                                <source src="images/simaoimages/2mini.mp4" type="video/mp4">
                                 Tu navegador no soporta el elemento de video.
                               </video>
                         </div>
@@ -119,10 +116,7 @@
                     <div class="swiper-slide hero" data-slide-number="3">
                         <div class="video-background">
                             <video autoplay muted loop playsinline class="backgroundVideo">
-                                <!-- Video para pantallas grandes -->
                                 <source src="images/simaoimages/3.mp4" type="video/mp4">
-                                <!-- Video para dispositivos móviles -->
-                                <source src="images/simaoimages/3mini.mp4" type="video/mp4">
                                 Tu navegador no soporta el elemento de video.
                               </video>
                         </div>
@@ -134,10 +128,7 @@
                     <div class="swiper-slide hero" data-slide-number="4">
                         <div class="video-background">
                             <video autoplay muted loop playsinline class="backgroundVideo">
-                                <!-- Video para pantallas grandes -->
                                 <source src="images/simaoimages/4.mp4" type="video/mp4">
-                                <!-- Video para dispositivos móviles -->
-                                <source src="images/simaoimages/4mini.mp4" type="video/mp4">
                                 Tu navegador no soporta el elemento de video.
                               </video>
                         </div>
@@ -149,10 +140,7 @@
                     <div class="swiper-slide hero" data-slide-number="5">
                         <div class="video-background">
                             <video autoplay muted loop playsinline class="backgroundVideo">
-                                <!-- Video para pantallas grandes -->
                                 <source src="images/simaoimages/5.mp4" type="video/mp4">
-                                <!-- Video para dispositivos móviles -->
-                                <source src="images/simaoimages/5mini.mp4" type="video/mp4">
                                 Tu navegador no soporta el elemento de video.
                               </video>
                         </div>
@@ -164,10 +152,7 @@
                      <div class="swiper-slide hero" data-slide-number="6">
                         <div class="video-background">
                             <video autoplay muted loop playsinline class="backgroundVideo">
-                                <!-- Video para pantallas grandes -->
                                 <source src="images/simaoimages/6.mp4" type="video/mp4">
-                                <!-- Video para dispositivos móviles -->
-                                <source src="images/simaoimages/6mini.mp4" type="video/mp4">
                                 Tu navegador no soporta el elemento de video.
                               </video>
                         </div>
@@ -179,10 +164,7 @@
                      <div class="swiper-slide hero" data-slide-number="7">
                         <div class="video-background">
                             <video autoplay muted loop playsinline class="backgroundVideo">
-                                <!-- Video para pantallas grandes -->
                                 <source src="images/simaoimages/7.mp4" type="video/mp4">
-                                <!-- Video para dispositivos móviles -->
-                                <source src="images/simaoimages/7mini.mp4" type="video/mp4">
                                 Tu navegador no soporta el elemento de video.
                               </video>
                         </div>
@@ -194,10 +176,7 @@
                     <div class="swiper-slide hero" data-slide-number="7">
                         <div class="video-background">
                             <video autoplay muted loop playsinline class="backgroundVideo">
-                                <!-- Video para pantallas grandes -->
                                 <source src="images/simaoimages/8.mp4" type="video/mp4">
-                                <!-- Video para dispositivos móviles -->
-                                <source src="images/simaoimages/8mini.mp4" type="video/mp4">
                                 Tu navegador no soporta el elemento de video.
                               </video>
                         </div>
@@ -400,6 +379,25 @@
           // Verificar al hacer scroll
           $(window).scroll(function () {
             addAnimationClassIfFullyVisible();
+          });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+          var mySwiper = new Swiper('.home-slider', {
+            autoplay: {
+              delay: 4000, // Establece el tiempo de espera entre slides en milisegundos (en este caso, 5000ms o 5 segundos)
+              disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
           });
         });
       </script>
