@@ -75,3 +75,15 @@ input {
 .icon1 {
   margin: 0 !important;
 }
+
+@media (max-width: 759px) {
+  .demosimao {
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 470px) {
+  .demosimao {
+    margin-top: 12%;
+  }
+}

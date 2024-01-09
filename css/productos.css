@@ -209,9 +209,9 @@ img,
 
   .flex-container {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
 
   .text-column {
@@ -220,15 +220,22 @@ img,
   }
 
   .image-column {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+  }
+
+  .center {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
   }
 
   .image-column img {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
   }
 
   .text-display-title {
@@ -298,6 +305,10 @@ button {
 @media (min-width: 759px) {
   .row2 {
     flex-direction: row;
+  }
+
+  .cont {
+    align-items: center;
   }
 
   .column2 {

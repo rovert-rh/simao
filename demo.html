@@ -66,9 +66,8 @@
             <div class="container mp-top2">
                 <div class="card ">
                     <section class="demosimao">
-                        <form action="/submit" method="post">
+                        <form action="https://formsubmit.co/dvuxlat@gmail.com" method="POST">
                             <h2>Contáctanos</h2>
-                    
                             <label for="nombre">Nombre:</label>
                             <input type="text" id="nombre" name="nombre" required>
 
@@ -80,10 +79,14 @@
                     
                             <label for="telefono">Número de Contacto:</label>
                             <input type="tel" id="telefono" name="telefono" required>
+                            <div class="cont">
+                                <button type="submit" value="Enviar" class="btn fifth1">Enviar</button>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+                            <input type="hidden" name="_template" value="table">
                         </form>
-                        <div class="cont">
-                            <button type="submit" class="btn fifth1">Enviar</button>
-                        </div>
+                        
                     </section>
                 </div>
             

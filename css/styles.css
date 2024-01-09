@@ -86,7 +86,7 @@
 
     /* monospace
     */
-    --font-mono: Consolas, 'Red Hat Display';
+    --font-mono: 'Red Hat Display';
 }
 
 /* ------------------------------------------------------------------- 
@@ -3669,12 +3669,15 @@ img.u-pull-left {
 }
 
 .service-icon-block {
-    text-align: center; /* Centra el bloque del icono */
+    text-align: center;
+    /* Centra el bloque del icono */
 }
 
 .service-icon {
-    display: block; /* Convierte el span en un elemento de bloque */
-    margin: 0 auto; /* Centra el icono dentro del bloque */
+    display: block;
+    /* Convierte el span en un elemento de bloque */
+    margin: 0 auto;
+    /* Centra el icono dentro del bloque */
 }
 
 .services-list .column:nth-child(2n + 1) {
