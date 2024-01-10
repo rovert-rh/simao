@@ -1,38 +1,45 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] != 'POST' ){
-    header("Location: index.html" );
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Cargar la librería de PHPMailer
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
+function enviarCorreo($nombre, $apellido, $email, $telefono) {
+    // Configurar PHPMailer
+    $mail = new PHPMailer(true);
+
+    try {
+        // Configurar el servidor SMTP
+        $mail->isSMTP();
+        $mail->Host       = 'tu_host_smtp';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'tu_correo_smtp';
+        $mail->Password   = 'tu_contraseña_smtp';
+        $mail->SMTPSecure = 'tls';
+        $mail->Port       = 587;
+
+        // Configurar el correo
+        $mail->setFrom('tu_correo@dominio.com', 'Tu Nombre');
+        $mail->addAddress('correo_destino@dominio.com', 'Nombre Destinatario');
+
+        // Contenido del correo
+        $mail->isHTML(true);
+        $mail->Subject = 'Formulario de contacto';
+        $mail->Body    = "Nombre: $nombre<br>Apellido: $apellido<br>Email: $email<br>Teléfono: $telefono";
+        $mailer->CharSet = 'UTF-8';
+
+        // Enviar el correo
+        $mail->send();
+
+        // Redirigir al index
+        header('Location: index.html');
+        exit;
+    } catch (Exception $e) {
+        // Manejar errores en el envío del correo
+        return "Error al enviar el correo: {$mail->ErrorInfo}";
+    }
 }
-
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$email = $_POST['email'];
-$telefono = $_POST['telefono'];
-
-if( empty(trim($nombre)) ) $nombre = 'anonimo';
-if( empty(trim($apellido)) ) $apellido = '';
-
-$body = <<<HTML
-    <h1>Contacto desde la web</h1>
-    <h5>De: $nombre $apellido</h5>
-    <h4>De: $email</h4>
-    <h4>De: $telefono</h4>
-HTML;
-
-//sintaxis de los emails email@algo.com || 
-// nombre <email@algo.com>
-
-$headers = "MIME-Version: 1.0 \r\n";
-$headers.= "Content-type: text/html; charset=utf-8 \r\n";
-$headers.= "From: $nombre $apellido <$email> \r\n";
-$headers.= "To: Sitio web <robertoireyes.m@gmail.com> \r\n";
-// $headers.= "Cc: copia@email.com \r\n";
-// $headers.= "Bcc: copia-oculta@email.com \r\n";
-
-
-//REMITENTE (NOMBRE/APELLIDO - EMAIL)
-//ASUNTO 
-//CUERPO 
-$rta = mail('robertoireyes.m@gmail.com', "Mensaje web: $asunto", $body, $headers );
-//var_dump($rta);
-
-header("Location: index.html" );
+?>
